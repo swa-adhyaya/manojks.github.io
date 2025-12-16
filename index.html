@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manoj K S - About Me</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #f0f4f7, #e8eef1);
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* Profile Card */
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Image */
+        .profile-img {
+            width: 260px;
+            height: 260px;
+            border-radius: 14px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto 25px auto;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            color: #222;
+            letter-spacing: 0.8px;
+        }
+
+        p {
+            font-size: 1.12rem;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 25px;
+            padding: 18px;
+            background: #f7fafc;
+            border-radius: 12px;
+            border-left: 5px solid #3a7bd5;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+        }
+
+        .contact:hover {
+            background: #eef5ff;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #222;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .card {
+            animation: fadeIn 1s ease forwards;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <img src="https://website-files-storage-bucket.s3.us-east-1.amazonaws.com/My_Pic.jpeg" alt="Profile Photo" class="profile-img" />
+
+            <h1>About Me</h1>
+
+            <p>
+                My name is <strong>Manoj K S</strong>, and I am from <strong>Madanapalle, Andhra Pradesh</strong>.
+                I work as a software engineer, and I have always been someone who enjoys exploring ideas,
+                understanding how things work, and finding simple ways to make learning more meaningful.
+                Along with my professional role, I have a strong passion for creating unique, hands-on learning
+                tools for students. I am drawn to developing simple, interactive, and practical learning
+                experiences that make education both engaging and joyful.
+            </p>
+
+            <p>
+                For nearly a decade, I was part of <strong>The Satsang Foundation Educational Institute</strong>,
+                where I actively engaged in providing hands-on education to students. This continues to be my
+                area of deep interest—designing tools, activities, and learning experiences that spark curiosity
+                and help students learn through exploration and doing.
+            </p>
+
+            <p>
+                
+                The teachings of <strong> J. Krishnamurti </strong> and <strong>Sri M </strong> have been a steady source of inspiration in my life,
+                shaping the way I understand learning, relationships, and inner clarity.
+                
+            </p>
+
+            <div class="contact">
+                <p><span class="label">Email:</span> swadhyaya.in@gmail.com</p>
+                <p><span class="label">Phone:</span> +91 70324 16505</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
