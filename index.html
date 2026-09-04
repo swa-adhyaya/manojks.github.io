@@ -26,6 +26,7 @@
             padding: 30px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease forwards;
         }
 
         .card:hover {
@@ -58,6 +59,15 @@
             letter-spacing: 0.8px;
         }
 
+        /* Section Heading */
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 12px;
+            font-size: 1.5rem;
+            color: #222;
+            letter-spacing: 0.5px;
+        }
+
         p {
             font-size: 1.12rem;
             line-height: 1.8;
@@ -86,12 +96,15 @@
 
         /* Fade-in Animation */
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(15px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
 
-        .card {
-            animation: fadeIn 1s ease forwards;
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -101,37 +114,63 @@
     <div class="container">
         <div class="card">
 
-            <img src="https://website-files-storage-bucket.s3.us-east-1.amazonaws.com/My_Pic.jpeg" alt="Profile Photo" class="profile-img" />
+            <img 
+                src="https://website-files-storage-bucket.s3.us-east-1.amazonaws.com/My_Pic.jpeg" 
+                alt="Profile Photo" 
+                class="profile-img" 
+            />
 
             <h1>About Me</h1>
 
             <p>
-                My name is <strong>Manoj K S</strong>, and I am from <strong>Madanapalle, Andhra Pradesh</strong>.
-                I work as a software engineer, and I have always been someone who enjoys exploring ideas,
-                understanding how things work, and finding simple ways to make learning more meaningful.
-                Along with my professional role, I have a strong passion for creating unique, hands-on learning
-                tools for students. I am drawn to developing simple, interactive, and practical learning
-                experiences that make education both engaging and joyful.
+                My name is <strong>Manoj K S</strong>, and I am from 
+                <strong>Madanapalle, Andhra Pradesh</strong>. I work as a software engineer, 
+                and I have always been someone who enjoys exploring ideas, understanding how 
+                things work, and finding simple ways to make learning more meaningful. Along 
+                with my professional role, I have a strong passion for creating unique, 
+                hands-on learning tools for students. I am drawn to developing simple, 
+                interactive, and practical learning experiences that make education both 
+                engaging and joyful.
             </p>
 
             <p>
-                For nearly a decade, I was part of <strong>The Satsang Foundation Educational Institute</strong>,
-                where I actively engaged in providing hands-on education to students. This continues to be my
-                area of deep interest—designing tools, activities, and learning experiences that spark curiosity
-                and help students learn through exploration and doing.
+                For nearly a decade, I was part of 
+                <strong>The Satsang Foundation Educational Institute</strong>, where I actively 
+                engaged in providing hands-on education to students. This continues to be my 
+                area of deep interest—designing tools, activities, and learning experiences 
+                that spark curiosity and help students learn through exploration and doing.
+            </p>
+
+            <h2>Personal Initiatives</h2>
+
+            <p>
+                <strong>Swadhyaya – Self-Learning Initiative</strong><br>
+                A personal initiative focused on promoting hands-on education and practical 
+                learning approaches for students, particularly in rural India. Through 
+                Swadhyaya, I am working with <strong>Rishi Valley School</strong>, founded by 
+                <strong>J. Krishnamurti</strong>, exploring ways to create meaningful learning 
+                experiences through practical work, making, experimentation, and 
+                self-directed learning.
             </p>
 
             <p>
-                
-                The teachings of <strong> J. Krishnamurti </strong> and <strong>Sri M </strong> have been a steady source of inspiration in my life,
+                The teachings of <strong>J. Krishnamurti</strong> and 
+                <strong>Sri M</strong> have been a steady source of inspiration in my life, 
                 shaping the way I understand learning, relationships, and inner clarity.
-                
             </p>
 
             <div class="contact">
-                <p><span class="label">Email:</span> swadhyaya.in@gmail.com</p>
-                <p><span class="label">Phone:</span> +91 70324 16505</p>
+                <p>
+                    <span class="label">Email:</span> 
+                    swadhyaya.in@gmail.com
+                </p>
+
+                <p>
+                    <span class="label">Phone:</span> 
+                    +91 70324 16505
+                </p>
             </div>
+
         </div>
     </div>
 
